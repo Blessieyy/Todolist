@@ -71,12 +71,14 @@ const AddTodo = () => {
       </form>
 
       {/* Display the list of todos */}
-      <ul>
+      <ul className='listing'>
         {todos.map((todo, index) => (
           <li key={index} style={{ color: getPriorityColor(todo.priority) }}>
             {todo.text}
-            <button onClick={() => handleEdit(index)}>Edit</button>
-            <button onClick={() => handleDelete(index)}>Delete</button>
+            <div className='button-container'>
+              <button onClick={() => handleEdit(index)}>Edit</button>
+              <button onClick={() => handleDelete(index)}>Delete</button>
+            </div>
           </li>
         ))}
       </ul>
