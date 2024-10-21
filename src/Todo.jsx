@@ -43,7 +43,7 @@ const TodoList = () => {
 
     return (
         <div>
-            <h2>Hello! What would you like to do today?</h2>
+            <h2>Hey There! What would you like to do today?</h2>
             <AddTodo addTodo={addTodo} />
             <ul style={{ listStyleType: 'none', padding: 0 }}>
                 {todos.map(todo => (
